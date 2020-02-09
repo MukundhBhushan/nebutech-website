@@ -374,7 +374,7 @@ footer {
 .container-image-ceo {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   margin-top: -6rem;
 }
 
@@ -420,12 +420,26 @@ footer {
 
 .quotes-1 {
   top: -6rem;
-  left: 1rem;
+  left: -3rem;
 }
 
 .quotes-2 {
   bottom: -6rem;
-  right: -1rem;
+  right: -3rem;
+}
+
+.block-investor {
+  box-shadow: 0px 0.610075px 3.05037px rgba(0, 0, 0, 0.2),
+    0px 1.83022px 2.4403px rgba(0, 0, 0, 0.12),
+    0px 1.22015px 2.4403px rgba(0, 0, 0, 0.14);
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.block-investor > .investor-info {
+  padding: 1rem;
 }
 
 /* Whitepaper */
@@ -525,6 +539,10 @@ footer {
 
 /* Utils */
 
+.m-1 {
+  margin: 1rem;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -609,6 +627,29 @@ footer {
   .carousel-indicators {
     bottom: 2.5rem;
     align-items: center;
+  }
+
+  .container-image-ceo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -6rem;
+  }
+
+  .quotes {
+    position: absolute;
+
+    height: 8rem;
+  }
+
+  .quotes-1 {
+    top: -6rem;
+    left: 1rem;
+  }
+
+  .quotes-2 {
+    bottom: -6rem;
+    right: 1rem;
   }
 }
 
