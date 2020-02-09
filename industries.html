@@ -27,7 +27,7 @@
     />
     <title>Nebutech | Bangalore</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light header">
       <button
@@ -88,8 +88,10 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
       </ol>
-      <div class="carousel-inner">
+      <div class="carousel-inner" id="myScrollspy">
+        <!-- Education -->
         <div class="carousel-item active">
           <div class="jumbotron web">
             <div class="container">
@@ -99,9 +101,13 @@
                     Nebutech in <b class="bolder">Education</b>
                   </h1>
                   <p class="hero-subtext">
-                    Learn more about how Nebutech is changing the<br />
+                    Learn more on how Nebutech is improving the student-teacher
+                    interaction
                   </p>
-                  <a class="btn btn-lg btn-learn-more" href="#" role="button"
+                  <a
+                    class="btn btn-lg btn-learn-more"
+                    href="#section-education"
+                    role="button"
                     >Learn more</a
                   >
                 </div>
@@ -126,10 +132,13 @@
                 <div class="row">
                   <div class="col-6 mockup-text">
                     <p class="hero-subtext">
-                      Learn more about how Nebutech is changing the<br />
-                      way students and teachers interact.
+                      Learn more on how Nebutech is improving the
+                      student-teacher interaction
                     </p>
-                    <a class="btn btn-sm btn-learn-more" href="#" role="button"
+                    <a
+                      class="btn btn-sm btn-learn-more"
+                      href="#section-education"
+                      role="button"
                       >Learn more</a
                     >
                   </div>
@@ -146,6 +155,67 @@
           </div>
         </div>
 
+        <!-- Gaming -->
+        <div class="carousel-item">
+          <div class="jumbotron web bg-teal">
+            <div class="container">
+              <div class="row">
+                <div class="section-text col-12 col-md-8">
+                  <h1 class="display-4">
+                    Nebutech in <b class="bolder">Gaming</b>
+                  </h1>
+                  <p class="hero-subtext">
+                    Learn more on how Nebutech is innovating gaming through
+                    gamification and connecting the unconnected
+                  </p>
+                  <a
+                    class="btn btn-lg btn-learn-more"
+                    href="#section-<"
+                    role="button"
+                    >Learn more</a
+                  >
+                </div>
+                <div class="section-image col-12 col-md-4">
+                  <img class="mockup" src="./assets/mockup_gaming.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="jumbotron mobile bg-teal">
+            <div class="container">
+              <div class="row">
+                <div class="section-text col-12">
+                  <h1 class="display-4">
+                    Nebutech in <b class="bolder">Gaming</b>
+                  </h1>
+                </div>
+                <div class="row">
+                  <div class="col-6 mockup-text">
+                    <p class="hero-subtext">
+                      Learn more on how Nebutech is innovating gaming through
+                      gamification and connecting the unconnected
+                    </p>
+                    <a
+                      class="btn btn-sm btn-learn-more"
+                      href="#section-gaming"
+                      role="button"
+                      >Learn more</a
+                    >
+                  </div>
+                  <div class="section-image col-6">
+                    <img
+                      class="mockup mockup-small"
+                      src="./assets/mockup_gaming.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hospitality -->
         <div class="carousel-item">
           <div class="jumbotron web bg-purple">
             <div class="container">
@@ -155,16 +225,21 @@
                     Nebutech in <b class="bolder">Hospitality</b>
                   </h1>
                   <p class="hero-subtext">
-                    way students and teachers interact.
+                    Learn more on how Nebutech is enabling digital
+                    transformation for better customer experience clubbed with
+                    information security and reliability
                   </p>
-                  <a class="btn btn-lg btn-learn-more" href="#" role="button"
+                  <a
+                    class="btn btn-lg btn-learn-more"
+                    href="#section-hospitality"
+                    role="button"
                     >Learn more</a
                   >
                 </div>
                 <div class="section-image col-12 col-md-4">
                   <img
                     class="mockup"
-                    src="./assets/mockup_education.png"
+                    src="./assets/mockup_hospitality.png"
                     alt=""
                   />
                 </div>
@@ -182,17 +257,21 @@
                 <div class="row">
                   <div class="col-6 mockup-text">
                     <p class="hero-subtext">
-                      Learn more about how Nebutech is changing the<br />
-                      way students and teachers interact.
+                      Learn more on how Nebutech is enabling digital
+                      transformation for better customer experience clubbed with
+                      information security and reliability
                     </p>
-                    <a class="btn btn-sm btn-learn-more" href="#" role="button"
+                    <a
+                      class="btn btn-sm btn-learn-more"
+                      href="#section-hospitality"
+                      role="button"
                       >Learn more</a
                     >
                   </div>
                   <div class="section-image col-6">
                     <img
                       class="mockup mockup-small"
-                      src="./assets/mockup_education.png"
+                      src="./assets/mockup_hospitality.png"
                       alt=""
                     />
                   </div>
@@ -202,6 +281,7 @@
           </div>
         </div>
 
+        <!-- Healthcare -->
         <div class="carousel-item">
           <div class="jumbotron web bg-indigo">
             <div class="container">
@@ -211,16 +291,20 @@
                     Nebutech in <b class="bolder">Healthcare</b>
                   </h1>
                   <p class="hero-subtext">
-                    Learn more about how Nebutech is changing the<br />
+                    Learn more on how Nebutech is enabling smart healthcare
+                    solution to reach more number of people around the world
                   </p>
-                  <a class="btn btn-lg btn-learn-more" href="#" role="button"
+                  <a
+                    class="btn btn-lg btn-learn-more"
+                    href="#section-healthcare"
+                    role="button"
                     >Learn more</a
                   >
                 </div>
                 <div class="section-image col-12 col-md-4">
                   <img
                     class="mockup"
-                    src="./assets/mockup_education.png"
+                    src="./assets/mockup_healthcare.png"
                     alt=""
                   />
                 </div>
@@ -238,17 +322,20 @@
                 <div class="row">
                   <div class="col-6 mockup-text">
                     <p class="hero-subtext">
-                      Learn more about how Nebutech is changing the<br />
-                      way students and teachers interact.
+                      Learn more on how Nebutech is enabling smart healthcare
+                      solution to reach more number of people around the world
                     </p>
-                    <a class="btn btn-sm btn-learn-more" href="#" role="button"
+                    <a
+                      class="btn btn-sm btn-learn-more"
+                      href="#section-healthcare"
+                      role="button"
                       >Learn more</a
                     >
                   </div>
                   <div class="section-image col-6">
                     <img
                       class="mockup mockup-small"
-                      src="./assets/mockup_education.png"
+                      src="./assets/mockup_healthcare.png"
                       alt=""
                     />
                   </div>
@@ -258,46 +345,115 @@
           </div>
         </div>
 
+        <!-- FinTech -->
         <div class="carousel-item">
-          <div class="jumbotron web bg-teal">
+          <div class="jumbotron web bg-earthy">
             <div class="container">
               <div class="row">
                 <div class="section-text col-12 col-md-8">
                   <h1 class="display-4">
-                    Nebutech in <b class="bolder">Gaming</b>
+                    Nebutech in <b class="bolder">FinTech</b>
                   </h1>
                   <p class="hero-subtext">
-                    way students and teachers interact.
+                    Learn more on how Nebutech is helping in simplified next gen
+                    financial services with security, speed on new channels
                   </p>
-                  <a class="btn btn-lg btn-learn-more" href="#" role="button"
+                  <a
+                    class="btn btn-lg btn-learn-more"
+                    href="#section-fintech"
+                    role="button"
                     >Learn more</a
                   >
                 </div>
                 <div class="section-image col-12 col-md-4">
                   <img
                     class="mockup"
-                    src="./assets/mockup_education.png"
+                    src="./assets/mockup_fintech.png"
                     alt=""
                   />
                 </div>
               </div>
             </div>
           </div>
-          <div class="jumbotron mobile bg-teal">
+          <div class="jumbotron mobile bg-earthy">
             <div class="container">
               <div class="row">
                 <div class="section-text col-12">
                   <h1 class="display-4">
-                    Nebutech in <b class="bolder">Gaming</b>
+                    Nebutech in <b class="bolder">FinTech</b>
                   </h1>
                 </div>
                 <div class="row">
                   <div class="col-6 mockup-text">
                     <p class="hero-subtext">
-                      Learn more about how Nebutech is changing the<br />
-                      way students and teachers interact.
+                      Learn more on how Nebutech is helping in simplified next
+                      gen financial services with security, speed on new
+                      channels
                     </p>
-                    <a class="btn btn-sm btn-learn-more" href="#" role="button"
+                    <a
+                      class="btn btn-sm btn-learn-more"
+                      href="#section-fintech"
+                      role="button"
+                      >Learn more</a
+                    >
+                  </div>
+                  <div class="section-image col-6">
+                    <img
+                      class="mockup mockup-small"
+                      src="./assets/mockup_fintech.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- IoT -->
+        <div class="carousel-item">
+          <div class="jumbotron web bg-brown">
+            <div class="container">
+              <div class="row">
+                <div class="section-text col-12 col-md-8">
+                  <h1 class="display-4">
+                    Nebutech in <b class="bolder">IoT</b>
+                  </h1>
+                  <p class="hero-subtext">
+                    Learn more on how Nebutech is helping industries and
+                    factories become smarter and more efficient
+                  </p>
+                  <a
+                    class="btn btn-lg btn-learn-more"
+                    href="#section-iot"
+                    role="button"
+                    >Learn more</a
+                  >
+                </div>
+                <div class="section-image col-12 col-md-4">
+                  <img class="mockup" src="./assets/mockup_iot.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="jumbotron mobile bg-brown">
+            <div class="container">
+              <div class="row">
+                <div class="section-text col-12">
+                  <h1 class="display-4">
+                    Nebutech in <b class="bolder">IoT</b>
+                  </h1>
+                </div>
+                <div class="row">
+                  <div class="col-6 mockup-text">
+                    <p class="hero-subtext">
+                      Learn more on how Nebutech is helping industries and
+                      factories become smarter and more efficient
+                    </p>
+                    <a
+                      class="btn btn-sm btn-learn-more"
+                      href="#section-iot"
+                      role="button"
                       >Learn more</a
                     >
                   </div>
@@ -337,7 +493,7 @@
     <!-- Details -->
     <section class="container">
       <h3 class="section-title">Industries we revolutionize</h3>
-      <div class="row featurette">
+      <div class="row featurette" id="section-education">
         <div class="col-md-7 text">
           <h2 class="blue">
             Education
@@ -365,6 +521,11 @@
             minds through 5Cs (Content, Coverage, Completeness, Collaboration,
             and Credentials) of education.
           </p>
+          <div class="link-explore-now-container">
+            <a href="/coming-soon.html" class="link-explore-now"
+              >Explore Now ></a
+            >
+          </div>
         </div>
 
         <div class="col-md-5 image">
@@ -373,7 +534,7 @@
           </div>
         </div>
       </div>
-      <div class="row featurette">
+      <div class="row featurette" id="section-gaming">
         <div class="col-md-7 order-md-2 text">
           <h2 class="teal">
             Gaming
@@ -398,6 +559,11 @@
             medical benefits mainly focusing on psychological matters of people
             ranging from all ages and walks of life.
           </p>
+          <div class="link-explore-now-container">
+            <a href="/coming-soon.html" class="link-explore-now"
+              >Explore Now ></a
+            >
+          </div>
         </div>
 
         <div class="col-md-5 order-md-1 image">
@@ -406,7 +572,7 @@
           </div>
         </div>
       </div>
-      <div class="row featurette">
+      <div class="row featurette" id="section-hospitality">
         <div class="col-md-7 text">
           <h2 class="purple">
             Hospitality
@@ -429,6 +595,11 @@
             products, we would like to enforce a customer experience second to
             none.
           </p>
+          <div class="link-explore-now-container">
+            <a href="/coming-soon.html" class="link-explore-now"
+              >Explore Now ></a
+            >
+          </div>
         </div>
 
         <div class="col-md-5 image">
@@ -437,7 +608,7 @@
           </div>
         </div>
       </div>
-      <div class="row featurette">
+      <div class="row featurette" id="section-healthcare">
         <div class="col-md-7 order-md-2 text">
           <h2 class="indigo">
             Healthcare
@@ -460,6 +631,11 @@
             platform to various providers in accelerating their growth to better
             serve the community.
           </p>
+          <div class="link-explore-now-container">
+            <a href="/coming-soon.html" class="link-explore-now"
+              >Explore Now ></a
+            >
+          </div>
         </div>
 
         <div class="col-md-5 order-md-1 image">
@@ -468,7 +644,7 @@
           </div>
         </div>
       </div>
-      <div class="row featurette">
+      <div class="row featurette" id="section-fintech">
         <div class="col-md-7 text">
           <h2 class="earthy">
             FinTech
@@ -490,6 +666,11 @@
             payments play a critical role in financial product experience on
             omnichannel based customer experience.
           </p>
+          <div class="link-explore-now-container">
+            <a href="/coming-soon.html" class="link-explore-now"
+              >Explore Now ></a
+            >
+          </div>
         </div>
 
         <div class="col-md-5 image">
@@ -498,7 +679,7 @@
           </div>
         </div>
       </div>
-      <div class="row featurette">
+      <div class="row featurette" id="section-iot">
         <div class="col-md-7 order-md-2 text">
           <h2 class="brown">
             Internet of Things (IoT)
@@ -520,6 +701,11 @@
             security, analytics, and standards in data transmission across
             applications and services.
           </p>
+          <div class="link-explore-now-container">
+            <a href="/coming-soon.html" class="link-explore-now"
+              >Explore Now ></a
+            >
+          </div>
         </div>
 
         <div class="col-md-5 order-md-1 image">

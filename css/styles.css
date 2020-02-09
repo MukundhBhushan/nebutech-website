@@ -154,6 +154,14 @@ section {
   font-size: 1rem;
 }
 
+.link-explore-now-container {
+  margin-bottom: 2rem;
+}
+
+.link-explore-now {
+  font-weight: bold;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -349,6 +357,7 @@ footer {
 }
 
 .container-ceo {
+  margin: 0;
   background-color: #00013e;
   color: white;
   display: flex;
@@ -362,16 +371,20 @@ footer {
   position: absolute;
 }
 
-.container-image-ceo > img {
+.container-image-ceo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -6rem;
+}
+
+.container-image-ceo > .image-ceo {
   height: 14rem;
   text-align: center;
-  /* position: absolute; */
-  /* top: -6rem; */
-  /* right: 3rem; */
   border: 2px dashed #0066ff;
   border-radius: 14rem;
   border-left: 1rem;
-  margin: 1rem 1rem 2rem;
+  margin: 1rem;
 }
 
 .text-ceo > .title {
@@ -383,8 +396,36 @@ footer {
   font-size: 1.2rem;
 }
 
+.text-ceo {
+  /* max-width: 50rem; */
+}
+
 .text-ceo > span {
   display: block;
+}
+
+.ceo-title {
+  display: block;
+}
+
+.ceo-name {
+  display: block;
+}
+
+.quotes {
+  position: absolute;
+
+  height: 8rem;
+}
+
+.quotes-1 {
+  top: -6rem;
+  left: 1rem;
+}
+
+.quotes-2 {
+  bottom: -6rem;
+  right: -1rem;
 }
 
 /* Whitepaper */
@@ -465,7 +506,21 @@ footer {
 }
 
 .carousel-indicators {
-  bottom: 1.5rem;
+  bottom: 1.1rem;
+  align-items: center;
+}
+
+.carousel-indicators > li {
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  margin: 0 0.5rem;
+}
+
+.carousel-indicators > li.active {
+  /* background-color: #0066ff !important; */
+  width: 10px;
+  height: 10px;
 }
 
 /* Utils */
@@ -476,6 +531,7 @@ footer {
 @media (min-width: 40em) {
   .hero-subtext {
     margin: 3rem 0;
+    max-width: 30rem;
   }
 
   .jumbotron > .container > .row > .section-text > h1 {
@@ -548,6 +604,11 @@ footer {
   }
   .mobile {
     display: none;
+  }
+
+  .carousel-indicators {
+    bottom: 2.5rem;
+    align-items: center;
   }
 }
 
