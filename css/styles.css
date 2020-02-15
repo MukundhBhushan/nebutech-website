@@ -89,11 +89,25 @@ body {
 .btn-learn-more {
   background-color: #f77f00;
   color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn-learn-more:hover {
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .btn-lets-talk {
   background-color: #0066ff;
   color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.btn-lets-talk:hover {
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .client-logo {
