@@ -538,6 +538,67 @@ footer {
   height: 10px;
 }
 
+/* Coming soon and 404 */
+.coming-soon-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.coming-soon-section > .image-container {
+  background-image: url("../assets/background-shape.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 15rem;
+  margin-bottom: 3rem;
+}
+
+.not-found-section {
+  margin-top: 0;
+}
+
+.coming-soon-section > .image-container > img {
+  width: 15rem;
+}
+
+.coming-soon-section > h4 {
+  color: #0066ff;
+  font-size: 0.8rem;
+}
+
+.coming-soon-section > h3 {
+  color: #00013e;
+  font-size: 0.8rem;
+  margin: 1rem;
+  font-style: italic;
+}
+
+.coming-soon-section > h3 > a {
+  color: #00013e;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+@media (min-width: 40em) {
+  .coming-soon-section > .image-container {
+    background-size: 32rem;
+  }
+
+  .coming-soon-section > .image-container > img {
+    width: 32rem;
+  }
+
+  .coming-soon-section > h4 {
+    font-size: 1.3rem;
+  }
+
+  .coming-soon-section > h3 {
+    font-size: 1.3rem;
+  }
+}
+
 /* Utils */
 
 .m-1 {
