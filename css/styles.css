@@ -183,9 +183,66 @@ section {
 }
 
 .block-news {
-  background-color: lightblue;
-  height: 300px;
-  margin: 1rem;
+  min-width: 250px;
+  margin: 1rem 0rem;
+  background: #ffffff;
+  box-shadow: 0px 0.688256px 3.44128px rgba(0, 0, 0, 0.2),
+    0px 2.06477px 2.75303px rgba(0, 0, 0, 0.12),
+    0px 1.37651px 2.75303px rgba(0, 0, 0, 0.14);
+  border-radius: 2.75303px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.block-news > .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem;
+}
+
+.block-news > .header > .label {
+  background-color: blue;
+  color: white;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+
+.block-news > .header > .label > h4 {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.block-news > .header > h5 {
+  color: #979797;
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+.block-news > img {
+  height: 200px;
+  /* max-width: 250px; */
+}
+
+.block-news > .content {
+  padding: 1rem;
+}
+
+.block-news > .content > h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.block-news > .content > p {
+  margin: 0;
 }
 
 .block-company {
@@ -687,6 +744,10 @@ footer {
   .block-contact-form {
     padding-left: 0;
     margin-left: 0;
+  }
+
+  .block-news {
+    margin: 1rem;
   }
 }
 
