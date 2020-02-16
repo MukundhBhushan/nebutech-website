@@ -155,7 +155,7 @@ section {
   justify-content: space-between;
 }
 
-.block-industry > img {
+.block-industry > a > img {
   height: 6rem;
 }
 
@@ -653,7 +653,7 @@ footer {
     font-size: 50px;
   }
 
-  .block-industry > img {
+  .block-industry > a > img {
     height: 10rem;
   }
 
