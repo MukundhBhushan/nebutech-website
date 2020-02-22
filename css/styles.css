@@ -550,7 +550,7 @@ footer {
   background-size: contain;
   position: absolute;
   /* Since maps are in percentages and the svg is in pixels */
-  right: calc(32.4% - 20px);
+  right: calc(32.8% - 20px);
   bottom: 43%;
 }
 
