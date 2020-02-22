@@ -173,10 +173,90 @@
     </section>
 
     <!-- Global -->
-    <!-- <section class="container">
+    <section class="container">
       <h3 class="section-title">We are Global</h3>
-      <img src="./assets/world.svg" alt="">
-    </section> -->
+      <div class="map-container">
+        <img id="world" src="./assets/world.svg" alt="" />
+        <div id="bangalore">
+          <div class="tooltiptext location-card">
+            <h5>Bangalore</h5>
+            <p>
+              21 Ananya Chaitanya Layout, Seegehalli Kadugodi Post, Bangalore
+              560067
+            </p>
+            <p>
+              <a href="tel:+91 9741841142">+91 9741841142</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .map-container {
+        position: relative;
+        /* width: 100px; */
+        width: 100%;
+        /* background-image: url("./assets/world-bg.svg"); */
+      }
+      .map-container > #world {
+        width: 100%;
+      }
+
+      .map-container > #bangalore {
+        width: 40px;
+        height: 40px;
+        background-image: url("./assets/location_primary.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        /* Since maps are in percentages and the svg is in pixels */
+        right: calc(29.7% - 20px);
+        bottom: 46%;
+      }
+
+      /* Tooltip text */
+      #bangalore .tooltiptext {
+        visibility: hidden;
+        width: 207px;
+        height: 166px;
+        background-color: white;
+        color: #000;
+        border-radius: 6px;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2),
+          0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
+        border-radius: 4px;
+        bottom: calc(46% + 30px);
+        right: 50%;
+
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;
+        transition-duration: 1s;
+      }
+
+      /* Show the tooltip text when you mouse over the tooltip container */
+      #bangalore:hover .tooltiptext {
+        visibility: visible;
+      }
+
+      .location-card {
+        color: black;
+        padding: 1rem;
+        text-align: left;
+      }
+
+      .location-card > h5 {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #ff9b21;
+      }
+      .location-card > p {
+        font-size: 12px;
+      }
+    </style>
 
     <footer>
       <div class="row">
