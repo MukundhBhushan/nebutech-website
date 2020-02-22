@@ -169,7 +169,7 @@ section {
 }
 
 .link-explore-now-container {
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .link-explore-now {
@@ -326,6 +326,8 @@ footer {
 
 .featurette {
   padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .featurette-divider {
@@ -349,6 +351,7 @@ footer {
   padding-bottom: 0.5rem;
   font-size: 1.5rem;
   font-weight: bold;
+  margin-top: 2rem;
 }
 
 .featurette > .text > p {
@@ -430,6 +433,7 @@ footer {
 
 .container-ceo {
   margin: 0;
+  margin-top: 4rem;
   background-color: #00013e;
   color: white;
   display: flex;
@@ -453,7 +457,7 @@ footer {
 .container-image-ceo > .image-ceo {
   height: 14rem;
   text-align: center;
-  border: 2px dashed #0066ff;
+  /* border: 2px dashed #0066ff; */
   border-radius: 14rem;
   border-left: 1rem;
   margin: 1rem;
@@ -470,6 +474,8 @@ footer {
 
 .text-ceo {
   /* max-width: 50rem; */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .text-ceo > span {
@@ -518,6 +524,75 @@ footer {
 
 .block-investor > .investor-info {
   padding: 1rem;
+}
+
+.investor-info > h3 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.map-container {
+  position: relative;
+  /* width: 100px; */
+  width: 100%;
+  /* background-image: url("./assets/world-bg.svg"); */
+}
+.map-container > #world {
+  width: 100%;
+}
+
+.map-container > #bangalore {
+  width: 40px;
+  height: 40px;
+  background-image: url("../assets/location_primary.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  /* Since maps are in percentages and the svg is in pixels */
+  right: calc(32.4% - 20px);
+  bottom: 43%;
+}
+
+/* Tooltip text */
+#bangalore .tooltiptext {
+  visibility: hidden;
+  width: 207px;
+  height: 166px;
+  background-color: white;
+  color: #000;
+  border-radius: 6px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12),
+    0px 2px 4px rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+  bottom: calc(43% + 30px);
+  right: 50%;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  transition-duration: 1s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+#bangalore:hover .tooltiptext {
+  visibility: visible;
+}
+
+.location-card {
+  color: black;
+  padding: 1rem;
+  text-align: left;
+}
+
+.location-card > h5 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ff9b21;
+}
+.location-card > p {
+  font-size: 12px;
 }
 
 /* Whitepaper */
@@ -748,6 +823,12 @@ footer {
 
   .block-news {
     margin: 1rem;
+  }
+
+  .featurette {
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -1169,4 +1250,10 @@ fieldset {
 }
 .button:focus {
   outline: none;
+}
+
+/*  */
+
+.brain-lighter {
+  opacity: 0.4 !important;
 }
