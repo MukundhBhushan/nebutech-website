@@ -33,6 +33,7 @@ body {
   color: white;
   border-radius: 0;
   background-size: cover;
+  margin-top: 70px;
 }
 
 .hero-subtext {
