@@ -72,14 +72,7 @@
         </ul>
       </div>
     </nav>
-    <iframe
-      width="100%"
-      height="450"
-      frameborder="0"
-      style="border:1px dashed blue"
-      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJbU60yXAWrjsR4E9-UejD3_g&key="
-      allowfullscreen
-    ></iframe>
+    <div id="map" style="width: 100%; height: 450px;"></div>
 
     <section class="row">
       <div class="col-12 col-md-5 flex-center">
@@ -240,5 +233,7 @@
         });
       });
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/1.8.0/mapbox-gl.min.js"></script>
+    <script src="./js/map.js"></script>
   </body>
 </html>
